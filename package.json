@@ -1,0 +1,29 @@
+{
+  "name": "bookstore_api",
+  "version": "1.0.0",
+  "description": "Complete backend API to manage books, authors, users, and orders. Uses Node.js, Express, MongoDB, and Postman",
+  "homepage": "https://github.com/lukeklipping/bookstore_api#readme",
+  "bugs": {
+    "url": "https://github.com/lukeklipping/bookstore_api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lukeklipping/bookstore_api.git"
+  },
+  "license": "ISC",
+  "author": "Luke Klipping",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.0.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.1",
+    "node.js": "^0.0.1-security"
+  },
+  "devDependencies": {}
+}
