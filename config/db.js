@@ -1,12 +1,12 @@
-const { MongoClient } = require("mongodb");
-
-//const uri =
-const client = new MongoClient(uri);
+const mongoose = require("mongoose");
 
 async function connectDB() {
   try {
-    await client.connect();
-    console.log("Connected to MongoDB Atlas");
+    await mongoose.connect(process.env.MONGODB_URI, {
+      useNewUrlParser: true,
+      useUnifiedTopology: true,
+    });
+    console.log("Connected to MongoDB with Mongoose");
     return client.db("NourishDB");
   } catch (error) {
     console.error("MongoDB connection error:", error);
