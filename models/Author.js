@@ -12,4 +12,4 @@ const authorSchema = new mongoose.Schema({
   ],
 });
 
-module.exports = mongoose.Model("Authors", authorSchema);
+module.exports = mongoose.Model("Author", authorSchema);
