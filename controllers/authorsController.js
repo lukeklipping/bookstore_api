@@ -66,7 +66,7 @@ exports.updateAuthor = async (req, res) => {
 };
 
 // DELETE /api/author/:id - Delete a author by ID
-exports.deletAuthor = async (req, res) => {
+exports.deleteAuthor = async (req, res) => {
   try {
     const author = await author.findByIdAndDelete(req.params.id);
     if (!author) {
