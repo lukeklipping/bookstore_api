@@ -1,3 +1,11 @@
+/*
+
+Author: Lukus Klipping
+Date: 2025-06-30
+Email: lukusklipping@gmail.com
+
+*/
+
 const Author = require("../models/Author");
 
 // GET /api/Authors - Get all Authors

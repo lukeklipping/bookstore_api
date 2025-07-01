@@ -1,3 +1,11 @@
+/*
+
+Author: Lukus Klipping
+Date: 2025-06-30
+Email: lukusklipping@gmail.com
+
+*/
+
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
