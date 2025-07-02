@@ -19,7 +19,7 @@ exports.getAllUsers = async (req, res) => {
 };
 
 // GET /api/users/:id - Get a user by ID
-exports.getuserId = async (req, res) => {
+exports.getUserId = async (req, res) => {
   try {
     const user = await user.findById(req.params.id);
     if (!user) {
@@ -32,7 +32,7 @@ exports.getuserId = async (req, res) => {
 };
 
 // POST /api/users - Create a new user
-exports.createuser = async (req, res) => {
+exports.createUser = async (req, res) => {
   const { user, books, total, createdAt } = req.body;
   if (!user || !books || !total) {
     return res
@@ -49,7 +49,7 @@ exports.createuser = async (req, res) => {
 };
 
 // PUT /api/users/:id - Update a user by ID
-exports.updateOrder = async (req, res) => {
+exports.updateUser = async (req, res) => {
   const { user, books, total, createdAt } = req.body;
   if (!title || !price || !author) {
     return res
@@ -72,7 +72,7 @@ exports.updateOrder = async (req, res) => {
 };
 
 // DELETE /api/users/:id - Delete a user by ID
-exports.deleteOrder = async (req, res) => {
+exports.deleteUser = async (req, res) => {
   try {
     const user = await user.findByIdAndDelete(req.params.id);
     if (!user) {
