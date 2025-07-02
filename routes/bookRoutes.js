@@ -7,7 +7,7 @@ Email: lukusklipping@gmail.com
 */
 
 const express = require("express");
-const router = expres.router();
+const router = express.Router();
 const bookController = require("../controllers/bookController");
 
 //Get all books
